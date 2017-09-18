@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear:both;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin:5px;
+            text-align:center;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:green;
+
+         }
+         :focus{
+            background-color:pink;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <fieldset><legend><h1>Registration</h1></legend>
+         
+        <form action="mail.php" method="post">
+           
+             <label class="field" for="userName"> Username:</label>
+             <input type="text" name="fname"/><br>
+             
+             <label class="field" for="userName"> Lastname:</label>
+             <input id="email" name="email" type="email" placeholder="Enter your Username here" /><br>
+             
+             <label class="field" for="userName"> Password:</label>
+             <input id="email" name="email" type="email" autofocus placeholder="Enter your password here"/><br>
+             
+             <label class="field" for="userName"> Email:</label>
+             <input id="email" name="email" type="email"/><br>
+             
+             <label class="field" for="telephone"> Telphone:</label>
+             <input name="telephone" type="text" 
+                 pattern="[0-8]{7}"/><br>
+             
+             <label class="field" for="userName"> Website:</label>
+             <input type="text" name=" website"/><br>
+             
+             <label class="field" for="Passport">Passport</label>
+             <input name="Passport" type="text" 
+                pattern="[0-9][A-Z]{8}"/> <br>
+                
+            <label><input type="checkbox" name="foods" value="Rice"></label>Rice<br>
+            <label><input type="checkbox" name="foods" value="Chips"></label>Chips<br>
+            <label><input type="checkbox" name="foods" value="Pizza"></label>Pizza<br>
+            <br>
+                
+            <label><input type="radio" name="Options" value="one"></label>One<br>
+            <label><input type="radio" name="Options" value="Second"></label>Second<br>  
+            <label><input type="radio" name="Options" value="one"></label>Third<br>
+            <br>
+            <label id="currency">Select your Currency</label>
+               <select id="currency">
+                 <option value="euro">Euro</option>  
+                  <option value="dollar">Dolla</option>
+                  <option value="Pounds">Pounds</option>
+                  <option value="naira">Naira</option
+               
+               
+            <br>
+            <br>
+            <label class="field"></label>
+            <input list="Music" name="Music">
+              <datalist id="Music"> Music
+                <option value="Ragge"></option> 
+                 <option value="Soft music"></option>
+                 <option value="Country music"></option>
+                 
+                 
+                 
+                 
+                 
+                 
+              </datalist>
+                
+                <input type="range" min="0" max="11"/>
+                <br><br>
+                
+                
+                
+             <input class="field" type="Submit" value="submit"/><br>
+         </form>
+      
+         </div>
+         
+   
+   </body>
+
+</html>
